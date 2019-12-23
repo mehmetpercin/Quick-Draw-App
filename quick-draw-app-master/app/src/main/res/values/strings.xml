@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Windows Project</string>
+    <string name="clear">SİL</string>
+    <string name="detect">BUL</string>
+    <string name="not_detected">Bulunamadi!</string>
+    <string name="sketch_prediction">Sekil : %1$s</string>
+    <string name="preview_scaled">Sonuc Onizlemesi: </string>
+</resources>

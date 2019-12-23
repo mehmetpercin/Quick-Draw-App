@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_md"
+
+    android:paddingTop="@dimen/margin_md"
+    android:background="@color/colorAccent"
+    tools:context="com.mp.quick_draw.MainActivity">
+
+    <com.mp.quick_draw.PaintView
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_md"
+        android:paddingRight="@dimen/margin_md">
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_sm"
+            android:paddingTop="@dimen/margin_sm"
+            android:paddingBottom="@dimen/margin_sm"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="20sp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_detect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:background="@color/colorPrimary"
+                android:layout_margin="4dp"
+                android:text="@string/detect" />
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="4dp"
+                android:textColor="@color/textColorPrimary"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
